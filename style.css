@@ -1,19 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
+body {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     transition: 2s;
-    background-color:#212121;
+    background-color: #212121;
 }
+.texto {
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+}
+.texto span {
+    position: relative;
+    text-decoration: none;
+    color: red;
+}
+.texto span::before {
+    content: "";
+    animation: palavras infinite 35s;
+}
+.texto span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid red;
+    right: -10px;
+    animation: barra 0.5s infinite, digita 35s steps(15) infinite  ;
+    width: calc(100% + 18px);
+    background-color: #212121;
+}
+@keyframes digita {
+    1%, 7%, 20%, 25%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+}
+@keyframes barra {
+    0% {
+        border-left: 2px solid #212121;
+    }
+}
+@keyframes palavras {
+    0%,10% {
+        content: "Policia militar";
+    }
+    11%,20% {
+        content: "Disque denuncia";
+    }
+    21%,
+    30% {
+        content: "Polícia civil";
+    }
+    31%,
+    40% {
+        content: "Polícia rodoviaria";
+    }
+    41%,
+    50% {
+        content: "SAMU";
+    }
+    51%,
+    60% {
+        content: "Instituto médico legal";
+    }
+    61%,
+    70% {
+        content: "Corpo de bombeiros";
+    }
+    71%,
+    80% {
+        content: "Defesa civil";
+    }
+    81%,
+    90% {
+        content: "Direitos humanos";
+    }
+    91%,
+    100% {
+        content: "Procon";
+    }}
 
+
+
+
+/* 
 h1{
     color: white;
     transition: 2s;
@@ -54,4 +123,5 @@ body.dark h1{
     left: 200px;
     background-color: aliceblue;
 }
+ */
 
