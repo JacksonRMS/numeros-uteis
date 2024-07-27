@@ -2,18 +2,73 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: 0s;
     background-color: #212121;
 }
+
+h1{
+    color: white;
+    transition: 2s;
+}
+
+.box{
+    display: flex;
+    justify-content: end;
+}
+
+#trilho{
+    width: 30px;
+    height: 15px;
+    background-color: #4d4d4d;
+    border-radius: 80px;
+    position: relative;
+    text-align: center;
+}
+
+ .cursor{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color:black;
+    position: absolute;
+    
+    left:1px;
+    transition: 0.5s;
+}
+
+body.dark{
+    background-color: #e4e4e4;
+}
+
+body.dark h1{
+    color: black;
+}
+
+#trilho.dark {
+    background-color:#5a4e4e;
+}
+
+.trilho.dark .cursor{
+    left: 14px;
+    background-color: aliceblue;
+}
+
 .texto {
-    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
     font-weight: 900;
     color: white;
 }
 .texto span {
+    font-size: 50px;
     position: relative;
     text-decoration: none;
     color: red;
+    filter: drop-shadow(2px 2px 1px black);
 }
 .texto span::before {
     content: "";
@@ -79,49 +134,42 @@ body {
         content: "Procon";
     }}
 
+    .help{
+        margin-top:20px ;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+input{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 9px;
+    border: solid 1.5px red;
+    filter: drop-shadow(5px 5px 5px black);
+    /* background-color: gray; */
+    color:rgb(233, 28, 14);
+}
 
+::placeholder{
+    color: rgb(250, 21, 21);
+}
 
-
-h1{
+button{
+    width: 120px;
+    height: 35px;
     color: white;
-    transition: 2s;
+    background-color: red;
+    border: solid 1px rgb(119, 116, 116);
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px black);
 }
 
-#trilho{
-    width: 350px;
-    height: 150px;
-    background-color: #4d4d4d;
-    border-radius: 80px;
-    position: relative;
+p{
+    font-size: 25px;
+    color: red;
+    filter: drop-shadow(3px 3px 5px black);
 }
-
-.trilho .cursor{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    transform: scale(0.9);
-    background-color:black;
-    position: absolute;
-    left: 0;
-    transition: 0.5s;
-}
-
-body.dark{
-    background-color: #e4e4e4;
-}
-
-body.dark h1{
-    color: black;
-}
-
-#trilho.dark {
-    background-color:#5a4e4e;
-}
-
-.trilho.dark .cursor{
-    left: 200px;
-    background-color: aliceblue;
-}
- 
-
