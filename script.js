@@ -26,27 +26,78 @@ trilho.addEventListener('click', ()=>{
 
  let input = document.querySelector('#input')
   let desc = document.querySelector('#descrição') //paragrafo
+  let detalhes = document.querySelector('#detalhes')
 
 const button = document.querySelector('#button')
 button.addEventListener("click", procurar)
 
 const contatos = [
-    { name: 'jackson', number: "(85) 99754-524" },
-     { name: 'jacksom', number:"(85) 99754-52"},
-   { name: 'jackso', number: "(85) 99754-5" },
-   { name: 'jack', number: "(85) 99754-2" },
-]
+    { 
+      name: 'polícia militar', 
+      number: '190', 
+      descrição: 'Responsável pelo patrulhamento ostensivo e pela preservação da ordem pública.' 
+    },
+    { 
+      name: 'disque denúncia', 
+      number: '181', 
+      descrição: 'Canal para denúncias anônimas de crimes e atividades suspeitas.' 
+    },
+    { 
+      name: 'polícia civil', 
+      number: '197', 
+      descrição: 'Realiza investigações criminais e serviços de polícia judiciária.' 
+    },
+    { 
+      name: 'polícia rodoviária federal', 
+      number: '191', 
+      descrição: 'Responsável pela fiscalização das rodovias federais e pelo combate a crimes nelas cometidos.' 
+    },
+    { 
+      name: 'samu', 
+      number: '192', 
+      descrição: 'Serviço de Atendimento Móvel de Urgência para emergências médicas.' 
+    },
+    { 
+      name: 'iml', 
+      number: '0800-2828-197', 
+      descrição: 'Instituto Médico Legal, responsável por perícias médicas legais.' 
+    },
+    { 
+      name: 'Bombeiros', 
+      number: '193', 
+      descrição: 'Atua no combate a incêndios, resgates e emergências envolvendo riscos à vida.' 
+    },
+    { 
+      name: 'defesa civil', 
+      number: '199', 
+      descrição: 'Coordenada ações de prevenção e resposta a desastres naturais e outras emergências.' 
+    },
+    { 
+      name: 'direitos humanos', 
+      number: '100', 
+      descrição: 'Central de atendimento para denúncias de violações de direitos humanos.' 
+    },
+    { 
+      name: 'procon', 
+      number: '151', 
+      descrição: 'Órgão de defesa do consumidor, atuando na proteção e orientação sobre direitos do consumidor.' 
+  },
+  ]
 
  function procurar() {
     
     for(let i = 0; i < contatos.length; i++){
         if(input.value.toLowerCase() === contatos[i].name){
             desc.innerHTML = `Contato encontrado com o nome: ${contatos[i].name} e telefone ${contatos[i].number}`
+            detalhes.innerHTML = `Descrição:  ${contatos[i].descrição}`
+            
             break
         }
 
         else{
-            desc.innerHTML = "contato não encontrado, tente novamente!"}
+            desc.innerHTML = "Contato não encontrado"
+            detalhes.innerHTML = "Tente novamente!"
+          }
 
    }
 
