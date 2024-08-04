@@ -178,7 +178,6 @@ input{
     border-radius: 9px;
     border: solid 1.5px yellow;
     filter: drop-shadow(5px 5px 5px black);
-    background-color: red; 
     color:#000000;
 }
 
