@@ -7,7 +7,7 @@ body {
 }
 
 h1{
-    color: white;
+    color: yellow;
     transition: 2s;
 }
 
@@ -42,7 +42,7 @@ body.dark{
 }
 
 body.dark h1{
-    color: black;
+    color: red;
 }
 
 #trilho.dark {
@@ -67,9 +67,15 @@ body.dark h1{
     font-size: 50px;
     position: relative;
     text-decoration: none;
-    color: red;
-    filter: drop-shadow(2px 2px 1px black);
+    color: yellow;
+    transition: 1s;
+    /* filter: drop-shadow(5px 5px 10px black); */
 }
+
+.texto.dark span{
+    color: red;
+}
+
 .texto span::before {
     content: "";
     animation: palavras infinite 35s;
@@ -84,6 +90,11 @@ body.dark h1{
     width: calc(100% + 18px);
     background-color: #212121;
 }
+
+.texto.dark  span::after{
+    background-color: #e4e4e4;
+}
+
 @keyframes digita {
     1%, 7%, 20%, 25%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
         width: 0;
@@ -148,10 +159,15 @@ input{
     width: 250px;
     height: 30px;
     border-radius: 9px;
-    border: solid 1.5px red;
+    border: solid 1.5px yellow;
     filter: drop-shadow(5px 5px 5px black);
     /* background-color: gray; */
     color:rgb(233, 28, 14);
+}
+
+input.dark{
+    border:solid 1.5px red;
+    color: black;
 }
 
 ::placeholder{
@@ -161,11 +177,16 @@ input{
 button{
     width: 120px;
     height: 35px;
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: yellow;
     border: solid 1px rgb(119, 116, 116);
     border-radius: 10px;
     filter: drop-shadow(5px 5px 5px black);
+}
+
+button.dark{
+    background-color: red;
+    color: white;
 }
 
 p{
