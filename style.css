@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
 body {
     height: 100vh;
     display: flex;
@@ -7,12 +14,14 @@ body {
 }
 
 h1{
+    font-family: "Caveat", cursive;
     color: yellow;
-    transition: 2s;
+    transition: .5s;
 }
 
 .box{
     display: flex;
+    margin: 20px;
     justify-content: end;
 }
 
@@ -36,6 +45,13 @@ h1{
     left:1px;
     transition: 0.5s;
 }
+
+nav{
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 80px;
+} 
 
 body.dark{
     background-color: #e4e4e4;
@@ -84,7 +100,7 @@ body.dark h1{
     content: "";
     position: absolute;
     height: 100%;
-    border-left: 2px solid red;
+    border-left: 2px solid yellow;
     right: -10px;
     animation: barra 0.5s infinite, digita 35s steps(15) infinite  ;
     width: calc(100% + 18px);
@@ -93,6 +109,7 @@ body.dark h1{
 
 .texto.dark  span::after{
     background-color: #e4e4e4;
+    border-left: 2px solid red;
 }
 
 @keyframes digita {
@@ -161,8 +178,8 @@ input{
     border-radius: 9px;
     border: solid 1.5px yellow;
     filter: drop-shadow(5px 5px 5px black);
-    /* background-color: gray; */
-    color:rgb(233, 28, 14);
+    background-color: red; 
+    color:#000000;
 }
 
 input.dark{
@@ -171,8 +188,9 @@ input.dark{
 }
 
 ::placeholder{
-    color: rgb(250, 21, 21);
-}
+    font-family: "Caveat", cursive;
+    font-weight: 600; 
+} 
 
 button{
     width: 120px;
@@ -182,6 +200,7 @@ button{
     border: solid 1px rgb(119, 116, 116);
     border-radius: 10px;
     filter: drop-shadow(5px 5px 5px black);
+    transition: .5s;
 }
 
 button.dark{
@@ -191,6 +210,15 @@ button.dark{
 
 p{
     font-size: 25px;
-    color: red;
+    color: yellow;
     filter: drop-shadow(3px 3px 5px black);
+    transition: 1.5s;
+}
+
+#descrição.dark{
+    color: red;
+}
+
+#detalhes.dark{
+    color: red;
 }

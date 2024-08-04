@@ -6,6 +6,7 @@ let span = document.querySelector('span')
 let inputt = document.querySelector('input')
 let botao = document.querySelector('button')
 
+
 trilho.addEventListener('click', () => {
   trilho.classList.toggle('dark')
   body.classList.toggle('dark')
@@ -14,6 +15,8 @@ trilho.addEventListener('click', () => {
   span.classList.toggle('dark')
   inputt.classList.toggle('dark')
   botao.classList.toggle('dark')
+  desc.classList.toggle('dark')
+  detalhes.classList.toggle('dark')
 })
 
 let input = document.querySelector('#input')
