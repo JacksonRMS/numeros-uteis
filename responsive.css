@@ -2,4 +2,16 @@
     body {
         background-color: rgb(49, 49, 92);
     }
-}
+
+     .texto span::after{
+        background-color: rgb(49, 49, 92);
+        border-left: 2px solid yellow;
+     }
+    .texto.dark span::after {
+            background-color: #e4e4e4;
+            border-left: 2px solid red;
+        }
+        p{
+            margin: 20px 30px;
+        }
+    } 

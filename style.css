@@ -9,14 +9,14 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    transition: 0s;
+    transition: 0.5s;
     background-color: #212121;
 }
 
 h1{
     font-family: "Caveat", cursive;
     color: yellow;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .box{
@@ -84,7 +84,7 @@ body.dark h1{
     position: relative;
     text-decoration: none;
     color: yellow;
-    transition: 1s;
+    transition: 0.5s;
     /* filter: drop-shadow(5px 5px 10px black); */
 }
 
@@ -96,6 +96,7 @@ body.dark h1{
     content: "";
     animation: palavras infinite 35s;
 }
+
 .texto span::after {
     content: "";
     position: absolute;
@@ -108,8 +109,8 @@ body.dark h1{
 }
 
 .texto.dark  span::after{
-    background-color: #e4e4e4;
     border-left: 2px solid red;
+    background-color: #e4e4e4;
 }
 
 @keyframes digita {
@@ -199,19 +200,21 @@ button{
     border: solid 1px rgb(119, 116, 116);
     border-radius: 10px;
     filter: drop-shadow(5px 5px 5px black);
-    transition: .5s;
+    transition: 0.5s;
+    margin-bottom: 30px;
 }
 
 button.dark{
     background-color: red;
     color: white;
+    margin-bottom: 30px;
 }
 
 p{
     font-size: 25px;
     color: yellow;
     filter: drop-shadow(3px 3px 5px black);
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 #descrição.dark{
