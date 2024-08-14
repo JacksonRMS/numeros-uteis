@@ -1,4 +1,4 @@
-<h1>S.O.S - NUMBER</h1>
+<h1  align="center" height="30" width="80" color="yellow" >S.O.S - NUMBER</h1>
 
 
 <img src="./sos.png">
@@ -23,3 +23,16 @@ O projeto "SOS Number" é uma aplicação web simples que oferece números de te
   - *Validação e Feedback:* Fornecer feedback ao usuário, como notificações ou mensagens de erro, se uma ação for bem-sucedida ou falhar, aprimorando a usabilidade.
 
 Em resumo, o projeto combina HTML para a estrutura, CSS para a estilização e JavaScript para a funcionalidade, resultando em uma ferramenta prática e eficiente para a geração de números temporários de telefone.
+
+
+
+
+
+
+
+
+<video src="https://github.com/user-attachments/assets/64f2ba1f-ed0c-4957-bc5e-2c77319c905c" type="video/mp4">
+</video>
+
+<video src="https://github.com/user-attachments/assets/08701ac6-af66-458a-89a5-f3218d68fa4d">
+
