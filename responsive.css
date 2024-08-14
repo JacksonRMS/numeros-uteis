@@ -14,4 +14,12 @@
         p{
             margin: 20px 30px;
         }
+
+        #trilho{
+            background-color: whitesmoke;
+        }
+
+        .cursor{
+            background-color: rgb(49, 49, 92);
+        }
     } 
