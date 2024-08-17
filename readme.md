@@ -1,4 +1,4 @@
-<h1  align="center" height="30" width="80" color="yellow" >S.O.S - NUMBER</h1>
+<h1  align="center" height="30" width="80">S.O.S - NUMBER <a href="#d-l">(Dark/Ligth)</a> </h1>
 
 
 <img src="./sos.png">
@@ -13,9 +13,9 @@ O projeto "SOS Number" é uma aplicação web simples que oferece números de te
 
 ### CSS:
 - *Estilização Visual:* O CSS é responsável por definir a aparência da página, como cores, fontes, espaçamento e layout. Ele garante que a página tenha um design limpo e atraente, melhorando a experiência do usuário.
-- *Responsividade:* O CSS também pode incluir regras para tornar a página responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos, garantindo que o site seja acessível em dispositivos móveis e desktops.
+- <a href="#responsive">*Responsividade:*</a>  O CSS também pode incluir regras para tornar a página responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos, garantindo que o site seja acessível em dispositivos móveis e desktops.
 
-### JavaScript:
+### JavaScript: 
 - *Funcionalidade Dinâmica:* O JavaScript desempenha um papel crucial na aplicação, adicionando interatividade e funcionalidade dinâmica à página. Ele é usado para:
   - *Carregar e Atualizar Números:* Carregar números de telefone temporários de uma fonte externa e atualizar a lista de números disponíveis sem precisar recarregar a página.
   - *Manipulação do DOM:* O JavaScript manipula o Document Object Model (DOM) para exibir ou ocultar informações na página, dependendo da interação do usuário.
@@ -31,8 +31,8 @@ Em resumo, o projeto combina HTML para a estrutura, CSS para a estilização e J
 
 
 
-<video src="https://github.com/user-attachments/assets/64f2ba1f-ed0c-4957-bc5e-2c77319c905c" type="video/mp4">
+<video id="responsive" src="https://github.com/user-attachments/assets/64f2ba1f-ed0c-4957-bc5e-2c77319c905c" type="video/mp4">
 </video>
 
-<video src="https://github.com/user-attachments/assets/08701ac6-af66-458a-89a5-f3218d68fa4d">
+<video id="d-l" src="https://github.com/user-attachments/assets/08701ac6-af66-458a-89a5-f3218d68fa4d">
 
